@@ -8,151 +8,150 @@
 		<meta name="description" content="PRACTICA 7.1">
 		<meta name="keywords" content="drag and drop">
 
-		<title>PRACTICA 7.1</title>
+		<title>Drag & Drop</title>
 		<link rel="stylesheet" href="estilos.css">
-		<body>
-			<div id="back">
-				<h1>7. Funciones Drag y Drop de HTML5</h1>
-
-		<nav id="navig">
-            <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="../6/pagina6.html">Leccion Previa</a></li>
-                <li><a>Siguiente Leccion </a></li>
-            </ul>
-        </nav>
-    
-		<style type="text/css">
-			* {
-				margin: 0;
-				padding: 0;
-			}
-
-			body {
-				margin-top: 60px;
-			}
-
-			.row:after,
-			.hitbox:after {
-				content: "";
-				display: table;
-				clear: both;
-			}
-
-			[class^="col-"] {
-				float: left;
-			}
-
-			.col-full {
-				width: 100%;
-			}
-
-			.col-half {
-				width: 50%;
-			}
-
-			.col-quarter {
-				width: 24%;
-				margin: 0.5%;
-				background-color: #aaaaaa;
-			}
-
-			.hitbox {
-				position: relative;
-			}
-
-			.hitbox:before {
-				display: block;
-				content: "";
-				padding-top: 100%;
-			}
-
-			.dropzone {
-				position: absolute;
-				top: 0;
-				bottom: 0;
-				left: 0;
-				right: 0;
-				background-size: 100% auto;
-				background-repeat: no-repeat;
-				background-position: center;
-			}
-
-			.answer {
-				width: 25%;
-				height: 25%;
-				position: absolute;
-				bottom: 0;
-				right: 0;
-				z-index: 1;
-			}
-
-			.answer.show {
-				visibility: visible;
-			}
-
-			.answer.hide {
-				visibility: hidden;
-			}
-
-			.dropzone:not(.container) .icon {
-				width: 100%;
-				height: 100%;
-				margin: 0;
-			}
-
-			.icon {
-				width: 24%;
-				margin: 0.5%;
-			}
-
-			#dropzone-autenticos {
-				background-image: url("img/autenticos-bg.png");
-			}
-
-			#dropzone-tigres {
-				background-image: url("img/tigres-bg.png") ;
-			}
-
-			#dropzone-borregos {
-				background-image: url("img/borregos-bg.png");
-			}
-
-			#dropzone-sultanes {
-				background-image: url("img/sultanes-bg.png");
-			}
-
-			#dropzone-monterrey {
-				background-image: url("img/monterrey-bg.png");
-			}
-
-			#dropzone-fuerzaregia {
-				background-image: url("img/fuerzaregia-bg.png");
-			}
-
-
-			.instructions {
-				text-align: center;
-			}
-
-			@media(max-width: 799px) {
-				.col-quarter {
-					width: 49%;
-				}
-
-				.icon {
-					width: 49%;
-				}
-
-				.col-half.hitbox {
-					padding-top: 100%;
-				}
-			}
-		</style>
 	</head>
 
 
 	<body>
+		<div id="back">
+			<h1>7. Funciones Drag y Drop de HTML5</h1>
+
+	<nav id="navig">
+		<ul>
+			<li><a href="../index.html">Inicio</a></li>
+			<li><a href="../6/pagina6.html">Leccion Previa</a></li>
+			<li><a>Siguiente Leccion </a></li>
+		</ul>
+	</nav>
+
+	<style type="text/css">
+		* {
+			margin: 0;
+			padding: 0;
+		}
+
+		body {
+			margin-top: 60px;
+		}
+
+		.row:after,
+		.hitbox:after {
+			content: "";
+			display: table;
+			clear: both;
+		}
+
+		[class^="col-"] {
+			float: left;
+		}
+
+		.col-full {
+			width: 100%;
+		}
+
+		.col-half {
+			width: 50%;
+		}
+
+		.col-quarter {
+			width: 24%;
+			margin: 0.5%;
+			background-color: #aaaaaa;
+		}
+
+		.hitbox {
+			position: relative;
+		}
+
+		.hitbox:before {
+			display: block;
+			content: "";
+			padding-top: 100%;
+		}
+
+		.dropzone {
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			background-size: 100% auto;
+			background-repeat: no-repeat;
+			background-position: center;
+		}
+
+		.answer {
+			width: 25%;
+			height: 25%;
+			position: absolute;
+			bottom: 0;
+			right: 0;
+			z-index: 1;
+		}
+
+		.answer.show {
+			visibility: visible;
+		}
+
+		.answer.hide {
+			visibility: hidden;
+		}
+
+		.dropzone:not(.container) .icon {
+			width: 100%;
+			height: 100%;
+			margin: 0;
+		}
+
+		.icon {
+			width: 24%;
+			margin: 0.5%;
+		}
+
+		#dropzone-autenticos {
+			background-image: url("img/autenticos-bg.png");
+		}
+
+		#dropzone-tigres {
+			background-image: url("img/tigres-bg.png") ;
+		}
+
+		#dropzone-borregos {
+			background-image: url("img/borregos-bg.png");
+		}
+
+		#dropzone-sultanes {
+			background-image: url("img/sultanes-bg.png");
+		}
+
+		#dropzone-monterrey {
+			background-image: url("img/monterrey-bg.png");
+		}
+
+		#dropzone-fuerzaregia {
+			background-image: url("img/fuerzaregia-bg.png");
+		}
+
+
+		.instructions {
+			text-align: center;
+		}
+
+		@media(max-width: 799px) {
+			.col-quarter {
+				width: 49%;
+			}
+
+			.icon {
+				width: 49%;
+			}
+
+			.col-half.hitbox {
+				padding-top: 100%;
+			}
+		}
+	</style>
 		<div class="row">
 			<div class="col-full instructions">
 				<h1>Tu puntaje es <span id="score">0</span>/6.</h1>
@@ -316,5 +315,56 @@
 				shuffleDropzones();
 			}
 		</script>
+		<div class="Conceptos">
+			<h2>Conclusiones</h2>
+			<table>
+				<tr>
+					<td>Nombre</td>
+					<td>Matricula</td>
+					<td>Carrera</td>
+				</tr>
+				<tr>
+					<td>Carlos Uriel Rodriguez Hidalgo</td>
+					<td>1933323</td>
+					<td>IAS</td>
+				</tr>
+				<tr>
+					<td colspan="3">
+						Como conclusión puedo decir que gracias al drag and drop puedo comprender más a fondo el arrastre de objetos dentro de otros y también pude comprender como es que funciona el arrastrar archivos hacia una página o mover de lugar objetos dentro de páginas como lo puede ser esta práctica
+					</td>
+				</tr>
+				<tr>
+					<td>Luis Fernando Montes de Oca Delgado</td>
+					<td>2001274</td>
+					<td>ITS</td>
+				</tr>
+				<tr>
+					<td colspan="3">
+						Drag and drop es una herramienta que nos permite una interaccion muy dinamica con la pagina, literalmente permitiendo sostener los elementos de una pagina, para despues arrastrarlos a una zona determinada, para asi que se realize alguna accion.
+					</td>
+				</tr>
+				<tr>
+					<td>Manuel de Jesús Casas Carrana</td>
+					<td>1986692</td>
+					<td>ITS</td>
+				</tr>
+				<tr>
+					<td colspan="3">
+						En conclusión es algo muy sencillo y el hecho de que esto sea así es que sin darnos cuenta forma parte de nuestras vidas ya que está basada completamente a cosas que pueden ser aplicadas en cualquier ámbito; puede ir desde hacer una simple pagina web o programas tan complejos capaces de controlar incluso de manera más eficiente negocios u empresas, pero además de fundamente en cosas más accesibles al con prendimiento de este mismo como el hecho de aprender un sistema numérico 
+	
+					</td>
+				</tr>
+				<tr>
+					<td>Reduan Missael Guel Gómez </td>
+					<td>1869402</td>
+					<td>IAS</td>
+				</tr>
+				<tr>
+					<td colspan="3">Para concluir con esta practica se pudo aprender lo importante que puede ser la etiqueta canva en la creacion de una pagina , ya que esta es util para poder implementar graficos a traves de secuencias de comandos.
+						La forma en la que se facilita para dibujar graficos y tambien el hecho de poder realizar animacion para la implementacion en la pagina web.
+					</td>
+				</tr>
+			</table>
+		</div>
 	</body>
 </html>
